@@ -35,14 +35,14 @@ choices.forEach((c)=>{
         // For changing choosen background
         let str="";
         if (window.innerWidth>700) {
-            str=`url(/img/${id}.png)`; 
+            str=`url(img/${id}.png)`; 
         }
-        else  str=`url(/img/${id}1.png)`; 
+        else  str=`url(img/${id}1.png)`; 
         usrChoosen.style.backgroundImage = str;
         if (window.innerWidth>700) {
-            str=`url(/img/${compC}.png)`; 
+            str=`url(img/${compC}.png)`; 
         }
-        else  str=`url(/img/${compC}1.png)`;
+        else  str=`url(img/${compC}1.png)`;
         compChoosen.style.backgroundImage = str;
         let result = play(id,compC);
         if (result=="draw") {
