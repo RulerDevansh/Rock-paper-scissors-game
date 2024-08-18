@@ -58,7 +58,7 @@
     }
     .play:active{
         transition: all .15s ease-in;
-        height: 28vh;
+        height: 33vw;
         width: 38vw;
     }
 }
