@@ -9,7 +9,7 @@
     body {
         height: 100vh;
         background-color: #28b5e4;
-        background-image:url(/img/back.png);
+        background-image:url(img/back.png);
         background-size:35vw;
     
     }
@@ -67,7 +67,7 @@
     body {
         height: 100vh;
         background-color: #28b5e4;
-        background-image:url(/img/back.png);
+        background-image:url(img/back.png);
         background-size:40vh;
     }
     .divh{
