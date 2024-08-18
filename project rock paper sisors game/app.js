@@ -32,10 +32,22 @@ choices.forEach((c)=>{
     c.addEventListener("click",()=>{
         let id = c.getAttribute('id');
         let compC = getCompChoice();
-        let str=`url(/img/${id}.png)`; // For changing choosen background
+
+        
+        // For changing choosen background
+        let str="";
+        if (window.innerWidth>700) {
+            str=`url(/img/${id}.png)`; 
+        }
+        else  str=`url(/img/${id}1.png)`; 
         usrChoosen.style.backgroundImage = str;
-        str = `url(/img/${compC}.png)`;
+        if (window.innerWidth>700) {
+            str=`url(/img/${compC}.png)`; 
+        }
+        else  str=`url(/img/${compC}1.png)`;
         compChoosen.style.backgroundImage = str;
+
+        
         let result = play(id,compC);
         if (result=="draw") {
             message.innerText="Oops!! Round Draw \nChoose Again!"; // updating message
